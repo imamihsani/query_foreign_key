@@ -1,0 +1,13 @@
+Bikin foreign key dari table anak ke table utama
+
+ALTER TABLE msa_web.win_proyek_kronologis 
+ADD CONSTRAINT fk_proyek_kronologis
+FOREIGN KEY (proyek_id) REFERENCES msa_web.win_proyek(proyek_id)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+Batal
+
+ALTER TABLE msa_web.win_proyek_kronologis 
+DROP FOREIGN KEY fk_kronologis_proyek;
+
